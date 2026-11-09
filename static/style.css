@@ -1,0 +1,163 @@
+/* style.css – how the page looks */
+
+:root {
+  --bg: #f4f4f5;      /* light grey page */
+  --card: #ffffff;    /* white message boxes */
+  --text: #1f2328;
+  --muted: #6b7280;
+  --line: #e4e4e7;
+  --accent: #2563eb;  /* William's blue */
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+/* William on top, in the middle */
+.mascot { position: relative; width: 100%; max-width: 720px; text-align: center; padding: 24px 16px 4px; }
+#cat {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  transform-origin: 50% 60%;
+  margin: 0;
+  text-align: left;
+  font-family: ui-monospace, Menlo, Consolas, "Courier New", monospace;
+  font-size: 15px;
+  line-height: 1.15;
+  color: var(--accent);
+}
+.name { margin: 6px 0 0; font-weight: 600; color: var(--muted); }
+
+/* William's flip: a little jump, a full turn, a soft landing */
+#cat.flip { animation: flip 1.1s cubic-bezier(.3, .7, .4, 1); }
+@keyframes flip {
+  0%   { transform: translateY(0) rotate(0) scaleY(1); }
+  12%  { transform: translateY(6px) rotate(0) scaleY(.85); }
+  40%  { transform: translateY(-70px) rotate(-180deg); }
+  80%  { transform: translateY(0) rotate(-360deg) scaleY(1); }
+  90%  { transform: translateY(4px) rotate(-360deg) scaleY(.9); }
+  100% { transform: translateY(0) rotate(-360deg) scaleY(1); }
+}
+
+/* William's speech bubble */
+.bubble {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  margin: 0;
+  transform: translate(90px, 0);
+  max-width: 220px;
+  padding: 8px 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity .3s;
+  pointer-events: none;
+}
+.bubble.show { opacity: 1; }
+@media (max-width: 500px) {
+  .bubble { transform: translate(40px, 0); max-width: 150px; font-size: 14px; }
+}
+
+.menus { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 10px; }
+.menus select[hidden] { display: none; }
+
+#course, #lesson {
+  width: 100%;
+  max-width: 420px;
+  padding: 8px 12px;
+  font-size: 15px;
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+/* The conversation */
+#chat {
+  flex: 1;
+  width: 100%;
+  max-width: 720px;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.msg {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+.msg.william { align-self: flex-start; background: var(--card); border: 1px solid var(--line); }
+.msg.me { align-self: flex-end; background: var(--accent); color: white; }
+.msg.result { align-self: center; font-weight: 600; background: #fef3c7; border: 1px solid #fde68a; }
+
+/* The lesson card */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px 20px;
+}
+.card h2 { margin: 0; font-size: 20px; }
+.card h3 { margin: 16px 0 6px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.subtitle { margin: 2px 0 0; color: var(--muted); }
+.goals { margin: 10px 0 0; }
+
+.words { width: 100%; border-collapse: collapse; }
+.words td { padding: 5px 8px 5px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.words .text { font-size: 18px; word-break: keep-all; }
+.words .pron { color: var(--accent); white-space: nowrap; }
+.words .meaning { color: var(--muted); }
+
+.grammar { padding: 8px 0; border-bottom: 1px solid var(--line); }
+.grammar:last-child { border-bottom: 0; }
+.grammar p { margin: 2px 0; }
+.g-name { font-weight: 600; }
+.g-explain { color: var(--text); line-height: 1.5; }
+.g-pattern { font-size: 17px; }
+.g-example { color: var(--muted); }
+
+/* The input line at the bottom */
+#form { width: 100%; max-width: 720px; display: flex; gap: 8px; padding: 12px 16px 20px; }
+
+#input {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+}
+#input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+
+button {
+  padding: 0 18px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.5; }
+
+@media (prefers-reduced-motion: reduce) {
+  #cat.flip { animation-duration: .01s; }
+}
