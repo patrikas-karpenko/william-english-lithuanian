@@ -51,6 +51,12 @@ function flip() {
 
 cat.addEventListener("click", flip);   // click William and he flips
 
+// Test button: makes William flip, so you can check the animation without answering 5 questions
+document.getElementById("flip-test").addEventListener("click", () => {
+  flip();
+  say(ui.perfect || "Miau!", 2000);
+});
+
 // The score next to William: every right answer adds 1. At 5/5 he flips and it starts again at 0/5.
 const GOAL = 5;
 let points = 0;

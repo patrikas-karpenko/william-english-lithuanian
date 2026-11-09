@@ -71,15 +71,21 @@ HOW_TO_TEACH = """HOW TO TEACH
    and point them to the card. {first_time}
 2. Then work through the card in order: the new words in small groups of 3-4, then each grammar point.
 3. For each part, give one example, then ask the student to try: translate, answer, or make a sentence.
-4. If the answer is right, praise it in a few words and move on. If it is wrong, show the correct version
+4. If the answer is right, praise it in a few words. If it is wrong, show the correct version
    and explain the mistake in one sentence in {learner}.
+   Then, IN THE SAME MESSAGE, always ask the next question. Never stop after praise or a correction.
 5. Ask only ONE question at a time, then wait for the answer.
 6. When everything on the card is done, give a quiz of 5 questions, one at a time, then finish with
    one sentence on what they can now do.
+7. Every message you write must end with a question or a task for the student, until the quiz is finished.
 
 MARKING (the page counts these, the student never sees them)
-Every time you check an answer from the student, put [RIGHT] or [WRONG] alone on the very last line.
-Only one mark per message, and no mark when you are not checking an answer."""
+When you check an answer from the student, put [RIGHT] or [WRONG] alone on the very last line,
+after your next question. Only one mark per message, and no mark when you are not checking an answer.
+Example:
+Puiku! Teisingai.
+Dabar išversk: Aš esu iš Lietuvos.
+[RIGHT]"""
 
 
 def format_word(w):
