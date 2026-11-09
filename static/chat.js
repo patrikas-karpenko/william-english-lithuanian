@@ -8,8 +8,13 @@ const bubble = document.getElementById("bubble");
 const button = form.querySelector("button");
 const courseSelect = document.getElementById("course");
 const lessonSelect = document.getElementById("lesson");
+const scoreBox = document.getElementById("score");
 
 let ui = {};   // the words on the page (buttons, headings) in the course's language
+
+// Has this browser met William before? Open the page with ?new to make him introduce himself again.
+if (location.search.includes("new")) localStorage.removeItem("met-william");
+let firstTime = !localStorage.getItem("met-william");
 
 // 1. Draw William
 const EYES = { normal: "o   o", happy: "^   ^", think: "-   o", wink: "^   -" };
@@ -46,6 +51,27 @@ function flip() {
 
 cat.addEventListener("click", flip);   // click William and he flips
 
+// The score next to William: every right answer adds 1. At 5/5 he flips and it starts again at 0/5.
+const GOAL = 5;
+let points = 0;
+
+function showScore() {
+  scoreBox.textContent = `${points}/${GOAL}`;
+  scoreBox.classList.remove("bump");
+  void scoreBox.offsetWidth;       // restart the little "bump" animation
+  scoreBox.classList.add("bump");
+}
+
+function addPoint() {
+  points += 1;
+  showScore();
+  if (points === GOAL) {
+    flip();
+    say(ui.perfect, 3000);
+    setTimeout(() => { points = 0; showScore(); }, 2500);
+  }
+}
+
 // 3. Put a message on the screen
 function addMessage(who, text) {
   const div = document.createElement("div");
@@ -68,29 +94,28 @@ async function askWilliam() {
     const response = await fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ course: courseSelect.value, lesson: Number(lessonSelect.value), messages: history }),
+      body: JSON.stringify({
+        course: courseSelect.value,
+        lesson: Number(lessonSelect.value),
+        messages: history,
+        first_time: firstTime,
+      }),
     });
     data = await response.json();
+    if (firstTime && response.ok) {        // William has introduced himself: never again
+      firstTime = false;
+      localStorage.setItem("met-william", "yes");
+    }
   } catch (error) {
-    data = { reply: ui.no_server || "Miau… the server isn't answering.", quiz: null };
+    data = { reply: ui.no_server || "Miau… the server isn't answering.", mark: null };
   }
 
   history.push({ role: "assistant", content: data.reply });
   addMessage("william", data.reply);
 
-  if (data.quiz) {                         // the quiz just ended
-    const { score, total } = data.quiz;
-    addMessage("result", `${ui.score}: ${score} / ${total}`);
-    if (score === total) {                 // all correct: flip!
-      flip();
-      say(ui.perfect, 4000);
-    } else {
-      drawCat("happy");
-    }
-  } else {
-    drawCat("happy");
-    setTimeout(() => drawCat("normal"), 1500);
-  }
+  drawCat("happy");
+  setTimeout(() => drawCat("normal"), 1500);
+  if (data.mark === "right") addPoint();   // William said the answer was right
   button.disabled = false;
   input.focus();
 }
@@ -131,7 +156,7 @@ function showCard(lesson) {
     for (const w of lesson.words) {
       const row = el("tr");
       row.appendChild(el("td", "text", w.text));
-      row.appendChild(el("td", "pron", w.pron || ""));
+      if (w.pron) row.appendChild(el("td", "pron", w.pron));   // only if the course has pronunciation
       row.appendChild(el("td", "meaning", w.meaning));
       table.appendChild(row);
     }
@@ -160,6 +185,8 @@ function showCard(lesson) {
 async function startLesson() {
   chat.innerHTML = "";             // clear the screen
   history.length = 0;              // forget the old conversation
+  points = 0;                      // new lesson, new score
+  scoreBox.textContent = `0/${GOAL}`;
   localStorage.setItem("course", courseSelect.value);
   localStorage.setItem("lesson-" + courseSelect.value, lessonSelect.value);
 

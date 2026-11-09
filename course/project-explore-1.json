@@ -1,0 +1,2430 @@
+{
+ "id": "project-explore-1",
+ "name": "Project Explore 1",
+ "target_language": "English",
+ "learner_language": "Lithuanian",
+ "format_example": "cat – katė",
+ "restrict_vocabulary": false,
+ "instructions": "The student is a Lithuanian school student (about 10-13 years old) and may have special educational needs. Speak to the student in simple, short, correct Lithuanian. English is only for the words, examples and practice. Keep English sentences very short and simple. Start every correction with 'Nedidelė klaidelė:', then show the correct English sentence and explain the mistake in one short Lithuanian sentence. Always ask the student to answer in a full sentence ('My cat is brown.', not 'brown'). Be warm and patient; praise effort. Ordinary body parts (head, arm, knee) are fine when the lesson needs them; never talk about private parts, romance, dating, alcohol, violence or anything really scary. Monsters and ghosts from the lesson are fine, in a fun way. Never ask for personal details such as addresses, phone numbers, school names or passwords.",
+ "ui": {
+  "lesson": "Pamoka",
+  "you_will_learn": "Išmoksi:",
+  "new_words": "Nauji žodžiai",
+  "grammar": "Gramatika",
+  "placeholder": "Rašyk Williamui…",
+  "send": "Siųsti",
+  "perfect": "Puiku! 5 iš 5!",
+  "start": "Labas! Pradėkime pamoką.",
+  "no_server": "Miau… serveris neatsako. Ar jis paleistas?",
+  "no_model": "Miau… negaliu prisijungti prie savo „smegenų“. Patikrink LLM_API_KEY."
+ },
+ "source": "Lesson order, vocabulary and grammar follow Project Explore 1 (Oxford University Press). Lithuanian meanings and explanations written for this app.",
+ "practice_links": [],
+ "lessons": [
+  {
+   "id": 1,
+   "title": "Intro A · New friends",
+   "title_learner": "Nauji draugai",
+   "words": [
+    {
+     "text": "the UK",
+     "meaning": "Jungtinė Karalystė"
+    },
+    {
+     "text": "British",
+     "meaning": "britas, britiškas"
+    },
+    {
+     "text": "Lithuania",
+     "meaning": "Lietuva"
+    },
+    {
+     "text": "Lithuanian",
+     "meaning": "lietuvis, lietuviškas"
+    },
+    {
+     "text": "Poland",
+     "meaning": "Lenkija"
+    },
+    {
+     "text": "Polish",
+     "meaning": "lenkas, lenkiškas"
+    },
+    {
+     "text": "France",
+     "meaning": "Prancūzija"
+    },
+    {
+     "text": "French",
+     "meaning": "prancūzas, prancūziškas"
+    },
+    {
+     "text": "Spain",
+     "meaning": "Ispanija"
+    },
+    {
+     "text": "Spanish",
+     "meaning": "ispanas, ispaniškas"
+    },
+    {
+     "text": "Hungary",
+     "meaning": "Vengrija"
+    },
+    {
+     "text": "Hungarian",
+     "meaning": "vengras, vengriškas"
+    },
+    {
+     "text": "the Czech Republic",
+     "meaning": "Čekija"
+    },
+    {
+     "text": "Czech",
+     "meaning": "čekas, čekiškas"
+    },
+    {
+     "text": "Slovakia",
+     "meaning": "Slovakija"
+    },
+    {
+     "text": "Slovak",
+     "meaning": "slovakas, slovakiškas"
+    },
+    {
+     "text": "Slovenia",
+     "meaning": "Slovėnija"
+    },
+    {
+     "text": "Slovenian",
+     "meaning": "slovėnas, slovėniškas"
+    },
+    {
+     "text": "Switzerland",
+     "meaning": "Šveicarija"
+    },
+    {
+     "text": "Swiss",
+     "meaning": "šveicaras, šveicariškas"
+    },
+    {
+     "text": "nationality",
+     "meaning": "tautybė"
+    },
+    {
+     "text": "competition",
+     "meaning": "konkursas"
+    },
+    {
+     "text": "prize",
+     "meaning": "prizas"
+    },
+    {
+     "text": "win",
+     "meaning": "laimėti"
+    },
+    {
+     "text": "Where are you from?",
+     "meaning": "Iš kur tu esi?"
+    },
+    {
+     "text": "I'm from Lithuania.",
+     "meaning": "Aš iš Lietuvos."
+    }
+   ],
+   "grammar": []
+  },
+  {
+   "id": 2,
+   "title": "Intro B · The exchange students",
+   "title_learner": "Mainų mokiniai",
+   "words": [
+    {
+     "text": "classroom",
+     "meaning": "klasė"
+    },
+    {
+     "text": "library",
+     "meaning": "biblioteka"
+    },
+    {
+     "text": "canteen",
+     "meaning": "valgykla"
+    },
+    {
+     "text": "gym",
+     "meaning": "sporto salė"
+    },
+    {
+     "text": "playground",
+     "meaning": "žaidimų aikštelė"
+    },
+    {
+     "text": "playing fields",
+     "meaning": "sporto aikštynas"
+    },
+    {
+     "text": "assembly hall",
+     "meaning": "aktų salė"
+    },
+    {
+     "text": "entrance",
+     "meaning": "įėjimas"
+    },
+    {
+     "text": "head's office",
+     "meaning": "direktoriaus kabinetas"
+    },
+    {
+     "text": "staffroom",
+     "meaning": "mokytojų kambarys"
+    },
+    {
+     "text": "Music room",
+     "meaning": "muzikos klasė"
+    },
+    {
+     "text": "Science lab",
+     "meaning": "gamtos mokslų laboratorija"
+    },
+    {
+     "text": "stairs",
+     "meaning": "laiptai"
+    },
+    {
+     "text": "toilet",
+     "meaning": "tualetas"
+    },
+    {
+     "text": "ground floor",
+     "meaning": "pirmas aukštas"
+    },
+    {
+     "text": "first floor",
+     "meaning": "antras aukštas"
+    },
+    {
+     "text": "Pleased to meet you.",
+     "meaning": "Malonu susipažinti."
+    },
+    {
+     "text": "This way.",
+     "meaning": "Eime čia."
+    }
+   ],
+   "grammar": []
+  },
+  {
+   "id": 3,
+   "title": "Intro C · Winston's week",
+   "title_learner": "Winstono savaitė",
+   "words": [
+    {
+     "text": "always",
+     "meaning": "visada"
+    },
+    {
+     "text": "usually",
+     "meaning": "paprastai"
+    },
+    {
+     "text": "often",
+     "meaning": "dažnai"
+    },
+    {
+     "text": "sometimes",
+     "meaning": "kartais"
+    },
+    {
+     "text": "never",
+     "meaning": "niekada"
+    },
+    {
+     "text": "break time",
+     "meaning": "pertrauka"
+    },
+    {
+     "text": "letter",
+     "meaning": "laiškas"
+    },
+    {
+     "text": "mistake",
+     "meaning": "klaida"
+    },
+    {
+     "text": "outside",
+     "meaning": "lauke"
+    },
+    {
+     "text": "cute",
+     "meaning": "mielas"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "freq",
+     "name": "Adverbs of frequency – kaip dažnai",
+     "explain": "Šie žodžiai sako, kaip dažnai kažką darai. Jie stovi prieš veiksmažodį, bet po žodžio am/is/are.",
+     "pattern": "always / usually / often / sometimes / never + veiksmažodis",
+     "examples": [
+      {
+       "text": "I always walk to school.",
+       "meaning": "Aš visada einu į mokyklą pėsčiomis."
+      },
+      {
+       "text": "She is never late.",
+       "meaning": "Ji niekada nevėluoja."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "title": "1A · Things I can do",
+   "title_learner": "Ką aš moku",
+   "words": [
+    {
+     "text": "play basketball",
+     "meaning": "žaisti krepšinį"
+    },
+    {
+     "text": "play the guitar",
+     "meaning": "groti gitara"
+    },
+    {
+     "text": "dance",
+     "meaning": "šokti"
+    },
+    {
+     "text": "dive",
+     "meaning": "nardyti, šokti į vandenį"
+    },
+    {
+     "text": "swim butterfly",
+     "meaning": "plaukti peteliške"
+    },
+    {
+     "text": "do gymnastics",
+     "meaning": "daryti gimnastiką"
+    },
+    {
+     "text": "do magic",
+     "meaning": "rodyti triukus"
+    },
+    {
+     "text": "do sudoku",
+     "meaning": "spręsti sudoku"
+    },
+    {
+     "text": "speak Spanish",
+     "meaning": "kalbėti ispaniškai"
+    },
+    {
+     "text": "teach",
+     "meaning": "mokyti"
+    },
+    {
+     "text": "weather",
+     "meaning": "oras"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "can",
+     "name": "can / can't – galiu, moku",
+     "explain": "Can reiškia „galiu, moku“, can't – „negaliu, nemoku“. Po can veiksmažodis lieka toks pat, be -s.",
+     "pattern": "I/You/He/She + can / can't + veiksmažodis · Can you …? – Yes, I can. / No, I can't.",
+     "examples": [
+      {
+       "text": "I can swim.",
+       "meaning": "Aš moku plaukti."
+      },
+      {
+       "text": "Can he play the guitar? – No, he can't.",
+       "meaning": "Ar jis moka groti gitara? – Ne, nemoka."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "title": "1B · Families",
+   "title_learner": "Šeimos",
+   "words": [
+    {
+     "text": "mother",
+     "meaning": "mama"
+    },
+    {
+     "text": "father",
+     "meaning": "tėtis"
+    },
+    {
+     "text": "parents",
+     "meaning": "tėvai"
+    },
+    {
+     "text": "brother",
+     "meaning": "brolis"
+    },
+    {
+     "text": "sister",
+     "meaning": "sesuo"
+    },
+    {
+     "text": "son",
+     "meaning": "sūnus"
+    },
+    {
+     "text": "daughter",
+     "meaning": "dukra"
+    },
+    {
+     "text": "child – children",
+     "meaning": "vaikas – vaikai"
+    },
+    {
+     "text": "grandmother",
+     "meaning": "senelė"
+    },
+    {
+     "text": "grandfather",
+     "meaning": "senelis"
+    },
+    {
+     "text": "grandparents",
+     "meaning": "seneliai"
+    },
+    {
+     "text": "great-grandmother",
+     "meaning": "prosenelė"
+    },
+    {
+     "text": "great-grandfather",
+     "meaning": "prosenelis"
+    },
+    {
+     "text": "aunt",
+     "meaning": "teta"
+    },
+    {
+     "text": "uncle",
+     "meaning": "dėdė"
+    },
+    {
+     "text": "cousin",
+     "meaning": "pusbrolis, pusseserė"
+    },
+    {
+     "text": "nephew",
+     "meaning": "sūnėnas"
+    },
+    {
+     "text": "niece",
+     "meaning": "dukterėčia"
+    },
+    {
+     "text": "husband",
+     "meaning": "vyras (sutuoktinis)"
+    },
+    {
+     "text": "wife",
+     "meaning": "žmona"
+    },
+    {
+     "text": "stepfather",
+     "meaning": "patėvis"
+    },
+    {
+     "text": "stepbrother",
+     "meaning": "įbrolis"
+    },
+    {
+     "text": "stepsister",
+     "meaning": "įseserė"
+    },
+    {
+     "text": "family tree",
+     "meaning": "giminės medis"
+    },
+    {
+     "text": "can't stand",
+     "meaning": "negaliu pakęsti"
+    },
+    {
+     "text": "hate",
+     "meaning": "nekęsti"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "like_ing",
+     "name": "love / like / don't like / hate + -ing",
+     "explain": "Kai sakome, kas patinka ar nepatinka daryti, po love, like, don't like, can't stand, hate veiksmažodis gauna galūnę -ing.",
+     "pattern": "I love / like / don't like / can't stand / hate + veiksmažodis-ing",
+     "examples": [
+      {
+       "text": "I love dancing.",
+       "meaning": "Aš labai mėgstu šokti."
+      },
+      {
+       "text": "My brother hates getting up early.",
+       "meaning": "Mano brolis nekenčia anksti keltis."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "title": "1C · My friends",
+   "title_learner": "Mano draugai",
+   "words": [
+    {
+     "text": "hair",
+     "meaning": "plaukai"
+    },
+    {
+     "text": "eyes",
+     "meaning": "akys"
+    },
+    {
+     "text": "nose",
+     "meaning": "nosis"
+    },
+    {
+     "text": "curly hair",
+     "meaning": "garbanoti plaukai"
+    },
+    {
+     "text": "straight hair",
+     "meaning": "tiesūs plaukai"
+    },
+    {
+     "text": "fair hair",
+     "meaning": "šviesūs plaukai"
+    },
+    {
+     "text": "dark hair",
+     "meaning": "tamsūs plaukai"
+    },
+    {
+     "text": "fringe",
+     "meaning": "kirpčiukai"
+    },
+    {
+     "text": "ponytail",
+     "meaning": "arklio uodega (šukuosena)"
+    },
+    {
+     "text": "beard",
+     "meaning": "barzda"
+    },
+    {
+     "text": "moustache",
+     "meaning": "ūsai"
+    },
+    {
+     "text": "friendly",
+     "meaning": "draugiškas"
+    },
+    {
+     "text": "clever",
+     "meaning": "protingas"
+    },
+    {
+     "text": "lively",
+     "meaning": "gyvas, energingas"
+    },
+    {
+     "text": "naughty",
+     "meaning": "išdykęs"
+    },
+    {
+     "text": "noisy",
+     "meaning": "triukšmingas"
+    },
+    {
+     "text": "quiet",
+     "meaning": "tylus"
+    },
+    {
+     "text": "shy",
+     "meaning": "drovus"
+    },
+    {
+     "text": "sporty",
+     "meaning": "sportiškas"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "what_like",
+     "name": "What … like? / What … look like?",
+     "explain": "What is he like? klausia, koks žmogus yra (charakteris). What does he look like? klausia, kaip jis atrodo (išvaizda).",
+     "pattern": "What is she like? – She's friendly. · What does she look like? – She's got long hair.",
+     "examples": [
+      {
+       "text": "What's your friend like? – He's funny.",
+       "meaning": "Koks tavo draugas? – Jis juokingas."
+      },
+      {
+       "text": "What does she look like? – She's got curly hair.",
+       "meaning": "Kaip ji atrodo? – Ji turi garbanotus plaukus."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "title": "1D · Saturday morning",
+   "title_learner": "Šeštadienio rytas",
+   "words": [
+    {
+     "text": "eyebrows",
+     "meaning": "antakiai"
+    },
+    {
+     "text": "glue",
+     "meaning": "klijai"
+    },
+    {
+     "text": "scissors",
+     "meaning": "žirklės"
+    },
+    {
+     "text": "laugh",
+     "meaning": "juoktis"
+    },
+    {
+     "text": "forget",
+     "meaning": "pamiršti"
+    },
+    {
+     "text": "hold",
+     "meaning": "laikyti"
+    },
+    {
+     "text": "cut up",
+     "meaning": "supjaustyti"
+    },
+    {
+     "text": "What's he saying? I don't understand.",
+     "meaning": "Ką jis sako? Aš nesuprantu."
+    },
+    {
+     "text": "Sorry, can you say that again, please?",
+     "meaning": "Atsiprašau, ar gali pakartoti?"
+    },
+    {
+     "text": "Sorry, can you explain, please?",
+     "meaning": "Atsiprašau, ar gali paaiškinti?"
+    },
+    {
+     "text": "What does 'eyebrows' mean?",
+     "meaning": "Ką reiškia „eyebrows“?"
+    },
+    {
+     "text": "Look, do it like this.",
+     "meaning": "Žiūrėk, daryk taip."
+    },
+    {
+     "text": "He's saying he's hungry.",
+     "meaning": "Jis sako, kad yra alkanas."
+    }
+   ],
+   "grammar": [
+    {
+     "id": "pres_cont",
+     "name": "Present continuous – ką darai dabar",
+     "explain": "Kai kalbame apie tai, kas vyksta dabar, sakome am/is/are + veiksmažodis su -ing.",
+     "pattern": "I am / He is / They are + veiksmažodis-ing · Are you …ing? – Yes, I am.",
+     "examples": [
+      {
+       "text": "I'm reading a book now.",
+       "meaning": "Aš dabar skaitau knygą."
+      },
+      {
+       "text": "Is she watching TV? – No, she isn't.",
+       "meaning": "Ar ji žiūri televizorių? – Ne."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "title": "2A · My home",
+   "title_learner": "Mano namai",
+   "words": [
+    {
+     "text": "bedroom",
+     "meaning": "miegamasis"
+    },
+    {
+     "text": "bathroom",
+     "meaning": "vonios kambarys"
+    },
+    {
+     "text": "dining room",
+     "meaning": "valgomasis"
+    },
+    {
+     "text": "attic",
+     "meaning": "palėpė"
+    },
+    {
+     "text": "garage",
+     "meaning": "garažas"
+    },
+    {
+     "text": "upstairs",
+     "meaning": "viršuje"
+    },
+    {
+     "text": "downstairs",
+     "meaning": "apačioje"
+    },
+    {
+     "text": "bed",
+     "meaning": "lova"
+    },
+    {
+     "text": "desk",
+     "meaning": "rašomasis stalas"
+    },
+    {
+     "text": "chair",
+     "meaning": "kėdė"
+    },
+    {
+     "text": "armchair",
+     "meaning": "fotelis"
+    },
+    {
+     "text": "sofa",
+     "meaning": "sofa"
+    },
+    {
+     "text": "table",
+     "meaning": "stalas"
+    },
+    {
+     "text": "wardrobe",
+     "meaning": "drabužių spinta"
+    },
+    {
+     "text": "cupboard",
+     "meaning": "spintelė"
+    },
+    {
+     "text": "lamp",
+     "meaning": "lempa"
+    },
+    {
+     "text": "light",
+     "meaning": "šviestuvas"
+    },
+    {
+     "text": "carpet",
+     "meaning": "kilimas"
+    },
+    {
+     "text": "picture",
+     "meaning": "paveikslas"
+    },
+    {
+     "text": "poster",
+     "meaning": "plakatas"
+    },
+    {
+     "text": "TV",
+     "meaning": "televizorius"
+    },
+    {
+     "text": "bath",
+     "meaning": "vonia"
+    },
+    {
+     "text": "shower",
+     "meaning": "dušas"
+    },
+    {
+     "text": "basin",
+     "meaning": "praustuvas"
+    },
+    {
+     "text": "in",
+     "meaning": "viduje"
+    },
+    {
+     "text": "on",
+     "meaning": "ant"
+    },
+    {
+     "text": "under",
+     "meaning": "po"
+    },
+    {
+     "text": "next to",
+     "meaning": "šalia"
+    },
+    {
+     "text": "behind",
+     "meaning": "už"
+    },
+    {
+     "text": "in front of",
+     "meaning": "priešais"
+    },
+    {
+     "text": "between",
+     "meaning": "tarp"
+    },
+    {
+     "text": "opposite",
+     "meaning": "priešais (kitoje pusėje)"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "there_is",
+     "name": "there is / there are – yra",
+     "explain": "There is sakome apie vieną daiktą, there are – apie kelis. Klausimas: Is there …? / Are there …?",
+     "pattern": "There is a … · There are some … · There isn't a … · There aren't any …",
+     "examples": [
+      {
+       "text": "There is a lamp on the desk.",
+       "meaning": "Ant stalo yra lempa."
+      },
+      {
+       "text": "There are two beds in my room.",
+       "meaning": "Mano kambaryje yra dvi lovos."
+      }
+     ],
+     "requires": []
+    },
+    {
+     "id": "a_some_any",
+     "name": "a / an, some / any",
+     "explain": "A/an sakome prieš vieną daiktą (an – prieš balsę: an apple). Some – „keli, šiek tiek“ teiginiuose sakiniuose, any – klausimuose ir neiginiuose.",
+     "pattern": "a chair · an armchair · some books · any posters?",
+     "examples": [
+      {
+       "text": "There's an armchair and some chairs.",
+       "meaning": "Yra fotelis ir kelios kėdės."
+      },
+      {
+       "text": "Are there any posters? – No, there aren't any.",
+       "meaning": "Ar yra plakatų? – Ne, nėra."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "title": "2B · My things",
+   "title_learner": "Mano daiktai",
+   "words": [
+    {
+     "text": "my – mine",
+     "meaning": "mano"
+    },
+    {
+     "text": "your – yours",
+     "meaning": "tavo"
+    },
+    {
+     "text": "his – his",
+     "meaning": "jo"
+    },
+    {
+     "text": "her – hers",
+     "meaning": "jos"
+    },
+    {
+     "text": "our – ours",
+     "meaning": "mūsų"
+    },
+    {
+     "text": "their – theirs",
+     "meaning": "jų"
+    },
+    {
+     "text": "Whose is it?",
+     "meaning": "Kieno tai?"
+    },
+    {
+     "text": "No way!",
+     "meaning": "Negali būti!"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "possessives",
+     "name": "Possessive adjectives and pronouns – kieno?",
+     "explain": "Prieš daiktą sakome my, your, his, her, our, their. Be daikto sakome mine, yours, his, hers, ours, theirs.",
+     "pattern": "It's my bag. = It's mine. · Whose is it? – It's hers.",
+     "examples": [
+      {
+       "text": "This is my pen. It's mine.",
+       "meaning": "Tai mano rašiklis. Jis mano."
+      },
+      {
+       "text": "Whose bike is it? – It's his.",
+       "meaning": "Kieno tai dviratis? – Jo."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "title": "2C · My town",
+   "title_learner": "Mano miestas",
+   "words": [
+    {
+     "text": "baker's",
+     "meaning": "kepykla"
+    },
+    {
+     "text": "butcher's",
+     "meaning": "mėsinė"
+    },
+    {
+     "text": "bookshop",
+     "meaning": "knygynas"
+    },
+    {
+     "text": "corner shop",
+     "meaning": "parduotuvėlė už kampo"
+    },
+    {
+     "text": "florist's",
+     "meaning": "gėlių parduotuvė"
+    },
+    {
+     "text": "games shop",
+     "meaning": "žaidimų parduotuvė"
+    },
+    {
+     "text": "pet shop",
+     "meaning": "gyvūnų prekių parduotuvė"
+    },
+    {
+     "text": "shoe shop",
+     "meaning": "avalynės parduotuvė"
+    },
+    {
+     "text": "sports shop",
+     "meaning": "sporto prekių parduotuvė"
+    },
+    {
+     "text": "sweet shop",
+     "meaning": "saldainių parduotuvė"
+    },
+    {
+     "text": "football pitch",
+     "meaning": "futbolo aikštė"
+    },
+    {
+     "text": "That's a pity.",
+     "meaning": "Gaila."
+    }
+   ],
+   "grammar": [
+    {
+     "id": "want",
+     "name": "want / want to",
+     "explain": "Want + daiktas: noriu ko nors. Want to + veiksmažodis: noriu ką nors daryti. Su he/she/it: wants.",
+     "pattern": "I want a … · I want to + veiksmažodis · She wants to …",
+     "examples": [
+      {
+       "text": "I want a new book.",
+       "meaning": "Aš noriu naujos knygos."
+      },
+      {
+       "text": "She wants to go to the pet shop.",
+       "meaning": "Ji nori eiti į gyvūnų prekių parduotuvę."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "title": "2D · Out and about",
+   "title_learner": "Išeinam pasivaikščioti",
+   "words": [
+    {
+     "text": "Shall we …?",
+     "meaning": "Gal …?"
+    },
+    {
+     "text": "How about …?",
+     "meaning": "O kaip dėl …?"
+    },
+    {
+     "text": "What about …?",
+     "meaning": "O gal …?"
+    },
+    {
+     "text": "Why don't we …?",
+     "meaning": "Kodėl mums ne …?"
+    },
+    {
+     "text": "Would you like to …?",
+     "meaning": "Ar norėtum …?"
+    },
+    {
+     "text": "That's a great idea!",
+     "meaning": "Puiki mintis!"
+    },
+    {
+     "text": "OK. Let's do that.",
+     "meaning": "Gerai, taip ir padarykim."
+    },
+    {
+     "text": "Yes, I'd love to.",
+     "meaning": "Taip, labai norėčiau."
+    },
+    {
+     "text": "I don't feel like …",
+     "meaning": "Nenoriu …"
+    },
+    {
+     "text": "I'm not sure.",
+     "meaning": "Nesu tikras."
+    },
+    {
+     "text": "sports centre",
+     "meaning": "sporto centras"
+    },
+    {
+     "text": "take photos",
+     "meaning": "fotografuoti"
+    }
+   ],
+   "grammar": []
+  },
+  {
+   "id": 12,
+   "title": "3A · Wild animals",
+   "title_learner": "Laukiniai gyvūnai",
+   "words": [
+    {
+     "text": "elephant",
+     "meaning": "dramblys"
+    },
+    {
+     "text": "giraffe",
+     "meaning": "žirafa"
+    },
+    {
+     "text": "buffalo",
+     "meaning": "buivolas"
+    },
+    {
+     "text": "gorilla",
+     "meaning": "gorila"
+    },
+    {
+     "text": "ostrich",
+     "meaning": "strutis"
+    },
+    {
+     "text": "lizard",
+     "meaning": "driežas"
+    },
+    {
+     "text": "snake",
+     "meaning": "gyvatė"
+    },
+    {
+     "text": "snail",
+     "meaning": "sraigė"
+    },
+    {
+     "text": "fur",
+     "meaning": "kailis"
+    },
+    {
+     "text": "feather",
+     "meaning": "plunksna"
+    },
+    {
+     "text": "wing",
+     "meaning": "sparnas"
+    },
+    {
+     "text": "beak",
+     "meaning": "snapas"
+    },
+    {
+     "text": "tail",
+     "meaning": "uodega"
+    },
+    {
+     "text": "neck",
+     "meaning": "kaklas"
+    },
+    {
+     "text": "tongue",
+     "meaning": "liežuvis"
+    },
+    {
+     "text": "trunk",
+     "meaning": "straublys"
+    },
+    {
+     "text": "tusk",
+     "meaning": "iltis"
+    },
+    {
+     "text": "horn",
+     "meaning": "ragas"
+    },
+    {
+     "text": "mane",
+     "meaning": "karčiai"
+    },
+    {
+     "text": "hoof – hooves",
+     "meaning": "kanopa – kanopos"
+    },
+    {
+     "text": "scale",
+     "meaning": "žvynas"
+    },
+    {
+     "text": "spot",
+     "meaning": "dėmė"
+    },
+    {
+     "text": "stripe",
+     "meaning": "dryžis"
+    },
+    {
+     "text": "big",
+     "meaning": "didelis"
+    },
+    {
+     "text": "small",
+     "meaning": "mažas"
+    },
+    {
+     "text": "long",
+     "meaning": "ilgas"
+    },
+    {
+     "text": "short",
+     "meaning": "trumpas"
+    },
+    {
+     "text": "tall",
+     "meaning": "aukštas"
+    },
+    {
+     "text": "fast",
+     "meaning": "greitas"
+    },
+    {
+     "text": "slow",
+     "meaning": "lėtas"
+    },
+    {
+     "text": "heavy",
+     "meaning": "sunkus"
+    },
+    {
+     "text": "light",
+     "meaning": "lengvas"
+    },
+    {
+     "text": "hairy",
+     "meaning": "plaukuotas"
+    },
+    {
+     "text": "smooth",
+     "meaning": "lygus"
+    },
+    {
+     "text": "pretty",
+     "meaning": "gražus"
+    },
+    {
+     "text": "ugly",
+     "meaning": "negražus"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "comp_short",
+     "name": "Comparatives – trumpi būdvardžiai",
+     "explain": "Kai lyginame du dalykus, trumpas būdvardis gauna -er, o po jo sakome than. big → bigger, heavy → heavier.",
+     "pattern": "būdvardis + -er + than",
+     "examples": [
+      {
+       "text": "An elephant is bigger than a giraffe.",
+       "meaning": "Dramblys didesnis už žirafą."
+      },
+      {
+       "text": "A snail is slower than a snake.",
+       "meaning": "Sraigė lėtesnė už gyvatę."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "title": "3B · A special pet",
+   "title_learner": "Ypatingas gyvūnėlis",
+   "words": [
+    {
+     "text": "pet",
+     "meaning": "naminis gyvūnėlis"
+    },
+    {
+     "text": "cage",
+     "meaning": "narvas"
+    },
+    {
+     "text": "climb",
+     "meaning": "laipioti"
+    },
+    {
+     "text": "move",
+     "meaning": "judėti"
+    },
+    {
+     "text": "exercise",
+     "meaning": "mankšta"
+    },
+    {
+     "text": "agree",
+     "meaning": "sutikti"
+    },
+    {
+     "text": "winner",
+     "meaning": "nugalėtojas"
+    },
+    {
+     "text": "Congratulations!",
+     "meaning": "Sveikiname!"
+    },
+    {
+     "text": "Ready, steady, go!",
+     "meaning": "Pasiruošę, dėmesio, startas!"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "sup_short",
+     "name": "Superlatives – trumpi būdvardžiai",
+     "explain": "Kai sakome, kad kažkas yra „pats“ (didžiausias, greičiausias), sakome the + būdvardis + -est.",
+     "pattern": "the + būdvardis + -est",
+     "examples": [
+      {
+       "text": "The cheetah is the fastest animal.",
+       "meaning": "Gepardas yra greičiausias gyvūnas."
+      },
+      {
+       "text": "My cat is the cutest pet.",
+       "meaning": "Mano katė yra pats mieliausias gyvūnėlis."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "title": "3C · Minibeasts",
+   "title_learner": "Vabaliukai",
+   "words": [
+    {
+     "text": "ant",
+     "meaning": "skruzdėlė"
+    },
+    {
+     "text": "bee",
+     "meaning": "bitė"
+    },
+    {
+     "text": "beetle",
+     "meaning": "vabalas"
+    },
+    {
+     "text": "butterfly",
+     "meaning": "drugelis"
+    },
+    {
+     "text": "centipede",
+     "meaning": "šimtakojis"
+    },
+    {
+     "text": "cricket",
+     "meaning": "svirplys"
+    },
+    {
+     "text": "dragonfly",
+     "meaning": "laumžirgis"
+    },
+    {
+     "text": "earthworm",
+     "meaning": "sliekas"
+    },
+    {
+     "text": "fly",
+     "meaning": "musė"
+    },
+    {
+     "text": "millipede",
+     "meaning": "tūkstantkojis"
+    },
+    {
+     "text": "mosquito",
+     "meaning": "uodas"
+    },
+    {
+     "text": "scorpion",
+     "meaning": "skorpionas"
+    },
+    {
+     "text": "spider",
+     "meaning": "voras"
+    },
+    {
+     "text": "wasp",
+     "meaning": "vapsva"
+    },
+    {
+     "text": "hundred",
+     "meaning": "šimtas"
+    },
+    {
+     "text": "thousand",
+     "meaning": "tūkstantis"
+    },
+    {
+     "text": "million",
+     "meaning": "milijonas"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "qwords",
+     "name": "Question words – klausiamieji žodžiai",
+     "explain": "Klausimai prasideda žodžiais: What – ką, kas; Where – kur; When – kada; Who – kas (žmogus); Why – kodėl; How – kaip; How many – kiek; Which – kuris.",
+     "pattern": "Klausiamasis žodis + is/are/do/does/can + …?",
+     "examples": [
+      {
+       "text": "Where do bees live?",
+       "meaning": "Kur gyvena bitės?"
+      },
+      {
+       "text": "How many legs has a spider got?",
+       "meaning": "Kiek kojų turi voras?"
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "title": "3D · A day with a keeper",
+   "title_learner": "Diena su prižiūrėtoju",
+   "words": [
+    {
+     "text": "amazing",
+     "meaning": "nuostabus"
+    },
+    {
+     "text": "beautiful",
+     "meaning": "gražus"
+    },
+    {
+     "text": "cute",
+     "meaning": "mielas"
+    },
+    {
+     "text": "horrible",
+     "meaning": "siaubingas"
+    },
+    {
+     "text": "interesting",
+     "meaning": "įdomus"
+    },
+    {
+     "text": "nice",
+     "meaning": "malonus"
+    },
+    {
+     "text": "scary",
+     "meaning": "gąsdinantis"
+    },
+    {
+     "text": "useful",
+     "meaning": "naudingas"
+    },
+    {
+     "text": "What do you think about …?",
+     "meaning": "Ką manai apie …?"
+    },
+    {
+     "text": "I think so, too.",
+     "meaning": "Aš irgi taip manau."
+    },
+    {
+     "text": "I don't think so.",
+     "meaning": "Nemanau."
+    },
+    {
+     "text": "I agree.",
+     "meaning": "Sutinku."
+    },
+    {
+     "text": "I don't agree.",
+     "meaning": "Nesutinku."
+    },
+    {
+     "text": "Me too.",
+     "meaning": "Aš irgi."
+    },
+    {
+     "text": "Me neither.",
+     "meaning": "Aš irgi ne."
+    },
+    {
+     "text": "I think that's horrible.",
+     "meaning": "Manau, kad tai siaubinga."
+    }
+   ],
+   "grammar": []
+  },
+  {
+   "id": 16,
+   "title": "4A · Water sports and winter sports",
+   "title_learner": "Vandens ir žiemos sportas",
+   "words": [
+    {
+     "text": "boring",
+     "meaning": "nuobodus"
+    },
+    {
+     "text": "exciting",
+     "meaning": "įdomus, jaudinantis"
+    },
+    {
+     "text": "easy",
+     "meaning": "lengvas"
+    },
+    {
+     "text": "difficult",
+     "meaning": "sunkus"
+    },
+    {
+     "text": "cheap",
+     "meaning": "pigus"
+    },
+    {
+     "text": "expensive",
+     "meaning": "brangus"
+    },
+    {
+     "text": "safe",
+     "meaning": "saugus"
+    },
+    {
+     "text": "dangerous",
+     "meaning": "pavojingas"
+    },
+    {
+     "text": "canoeing",
+     "meaning": "irklavimas kanoja"
+    },
+    {
+     "text": "rowing",
+     "meaning": "irklavimas"
+    },
+    {
+     "text": "sailing",
+     "meaning": "buriavimas"
+    },
+    {
+     "text": "snorkelling",
+     "meaning": "nardymas su vamzdeliu"
+    },
+    {
+     "text": "scuba diving",
+     "meaning": "nardymas su akvalangu"
+    },
+    {
+     "text": "waterskiing",
+     "meaning": "vandens slidės"
+    },
+    {
+     "text": "kite surfing",
+     "meaning": "jėgos aitvarų sportas"
+    },
+    {
+     "text": "skating",
+     "meaning": "čiuožimas"
+    },
+    {
+     "text": "ice hockey",
+     "meaning": "ledo ritulys"
+    },
+    {
+     "text": "cross-country skiing",
+     "meaning": "lygumų slidinėjimas"
+    },
+    {
+     "text": "ski jumping",
+     "meaning": "šuoliai su slidėmis"
+    },
+    {
+     "text": "tobogganing",
+     "meaning": "važinėjimas rogutėmis"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "comp_long",
+     "name": "Comparatives and superlatives – ilgi būdvardžiai",
+     "explain": "Su ilgais būdvardžiais nepridedame -er/-est. Sakome more … than ir the most …. Išimtys: good → better → the best, bad → worse → the worst.",
+     "pattern": "more + būdvardis + than · the most + būdvardis",
+     "examples": [
+      {
+       "text": "Skiing is more dangerous than skating.",
+       "meaning": "Slidinėjimas pavojingesnis už čiuožimą."
+      },
+      {
+       "text": "Scuba diving is the most exciting sport.",
+       "meaning": "Nardymas yra įdomiausia sporto šaka."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "title": "4B · The race",
+   "title_learner": "Lenktynės",
+   "words": [
+    {
+     "text": "race",
+     "meaning": "lenktynės"
+    },
+    {
+     "text": "start",
+     "meaning": "startas"
+    },
+    {
+     "text": "finish",
+     "meaning": "finišas"
+    },
+    {
+     "text": "track",
+     "meaning": "bėgimo takas"
+    },
+    {
+     "text": "crowd",
+     "meaning": "minia"
+    },
+    {
+     "text": "winner",
+     "meaning": "nugalėtojas"
+    },
+    {
+     "text": "shout",
+     "meaning": "šaukti"
+    },
+    {
+     "text": "wave",
+     "meaning": "mojuoti"
+    },
+    {
+     "text": "rabbit",
+     "meaning": "triušis"
+    },
+    {
+     "text": "turtle",
+     "meaning": "vėžlys"
+    },
+    {
+     "text": "slowly",
+     "meaning": "lėtai"
+    },
+    {
+     "text": "quickly",
+     "meaning": "greitai"
+    },
+    {
+     "text": "carefully",
+     "meaning": "atsargiai"
+    },
+    {
+     "text": "loudly",
+     "meaning": "garsiai"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "adverbs",
+     "name": "Adverbs – kaip kažkas daroma",
+     "explain": "Prieveiksmis pasako, kaip kažkas daroma. Dažniausiai pridedame -ly: slow → slowly. Išimtys: fast → fast, good → well, hard → hard.",
+     "pattern": "veiksmažodis + prieveiksmis (slowly, quickly, carefully, well)",
+     "examples": [
+      {
+       "text": "The turtle walks slowly.",
+       "meaning": "Vėžlys eina lėtai."
+      },
+      {
+       "text": "She runs fast and plays well.",
+       "meaning": "Ji bėga greitai ir žaidžia gerai."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "title": "4C · Sports heroes",
+   "title_learner": "Sporto didvyriai",
+   "words": [
+    {
+     "text": "champion",
+     "meaning": "čempionas"
+    },
+    {
+     "text": "award",
+     "meaning": "apdovanojimas"
+    },
+    {
+     "text": "famous",
+     "meaning": "garsus"
+    },
+    {
+     "text": "was born",
+     "meaning": "gimė"
+    },
+    {
+     "text": "team",
+     "meaning": "komanda"
+    },
+    {
+     "text": "wind",
+     "meaning": "vėjas"
+    },
+    {
+     "text": "umbrella",
+     "meaning": "skėtis"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "past_be",
+     "name": "Past simple: be – was / were",
+     "explain": "Praeityje am/is virsta was, o are virsta were. Neiginys: wasn't / weren't.",
+     "pattern": "I/He/She/It was · You/We/They were · Was he …? – Yes, he was.",
+     "examples": [
+      {
+       "text": "She was a champion in 2020.",
+       "meaning": "2020 metais ji buvo čempionė."
+      },
+      {
+       "text": "We weren't at home yesterday.",
+       "meaning": "Vakar mes nebuvome namie."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "title": "4D · Be careful!",
+   "title_learner": "Būk atsargus!",
+   "words": [
+    {
+     "text": "head",
+     "meaning": "galva"
+    },
+    {
+     "text": "neck",
+     "meaning": "kaklas"
+    },
+    {
+     "text": "shoulder",
+     "meaning": "petys"
+    },
+    {
+     "text": "arm",
+     "meaning": "ranka"
+    },
+    {
+     "text": "elbow",
+     "meaning": "alkūnė"
+    },
+    {
+     "text": "wrist",
+     "meaning": "riešas"
+    },
+    {
+     "text": "hand",
+     "meaning": "plaštaka"
+    },
+    {
+     "text": "finger",
+     "meaning": "pirštas"
+    },
+    {
+     "text": "thumb",
+     "meaning": "nykštys"
+    },
+    {
+     "text": "chest",
+     "meaning": "krūtinė"
+    },
+    {
+     "text": "stomach",
+     "meaning": "pilvas"
+    },
+    {
+     "text": "back",
+     "meaning": "nugara"
+    },
+    {
+     "text": "leg",
+     "meaning": "koja"
+    },
+    {
+     "text": "knee",
+     "meaning": "kelis"
+    },
+    {
+     "text": "ankle",
+     "meaning": "kulkšnis"
+    },
+    {
+     "text": "foot – feet",
+     "meaning": "pėda – pėdos"
+    },
+    {
+     "text": "toe",
+     "meaning": "kojos pirštas"
+    },
+    {
+     "text": "big toe",
+     "meaning": "didysis kojos pirštas"
+    },
+    {
+     "text": "What's the matter?",
+     "meaning": "Kas atsitiko?"
+    },
+    {
+     "text": "Are you all right?",
+     "meaning": "Ar tau viskas gerai?"
+    },
+    {
+     "text": "I've got a pain in my back.",
+     "meaning": "Man skauda nugarą."
+    },
+    {
+     "text": "My ankle hurts.",
+     "meaning": "Man skauda kulkšnį."
+    },
+    {
+     "text": "Are you feeling better?",
+     "meaning": "Ar jautiesi geriau?"
+    },
+    {
+     "text": "Shall I help you?",
+     "meaning": "Ar tau padėti?"
+    },
+    {
+     "text": "I'll help you.",
+     "meaning": "Aš tau padėsiu."
+    },
+    {
+     "text": "No, it's OK. I'm fine.",
+     "meaning": "Ne, viskas gerai."
+    },
+    {
+     "text": "Don't worry. I can do it.",
+     "meaning": "Nesijaudink, aš galiu."
+    }
+   ],
+   "grammar": []
+  },
+  {
+   "id": 20,
+   "title": "5A · Holidays",
+   "title_learner": "Atostogos",
+   "words": [
+    {
+     "text": "beach",
+     "meaning": "paplūdimys"
+    },
+    {
+     "text": "city",
+     "meaning": "miestas"
+    },
+    {
+     "text": "countryside",
+     "meaning": "gamta už miesto"
+    },
+    {
+     "text": "farm",
+     "meaning": "ūkis"
+    },
+    {
+     "text": "forest",
+     "meaning": "miškas"
+    },
+    {
+     "text": "island",
+     "meaning": "sala"
+    },
+    {
+     "text": "lake",
+     "meaning": "ežeras"
+    },
+    {
+     "text": "mountains",
+     "meaning": "kalnai"
+    },
+    {
+     "text": "river",
+     "meaning": "upė"
+    },
+    {
+     "text": "campsite",
+     "meaning": "kempingas"
+    },
+    {
+     "text": "bike",
+     "meaning": "dviratis"
+    },
+    {
+     "text": "boat",
+     "meaning": "valtis, laivas"
+    },
+    {
+     "text": "car",
+     "meaning": "automobilis"
+    },
+    {
+     "text": "coach",
+     "meaning": "tarpmiestinis autobusas"
+    },
+    {
+     "text": "ferry",
+     "meaning": "keltas"
+    },
+    {
+     "text": "hot-air balloon",
+     "meaning": "oro balionas"
+    },
+    {
+     "text": "motorbike",
+     "meaning": "motociklas"
+    },
+    {
+     "text": "plane",
+     "meaning": "lėktuvas"
+    },
+    {
+     "text": "train",
+     "meaning": "traukinys"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "past_pos_neg",
+     "name": "Past simple: teiginiai ir neiginiai",
+     "explain": "Praeities veiksmams taisyklingi veiksmažodžiai gauna -ed (visit → visited). Netaisyklingi keičiasi patys (go → went). Neiginys: didn't + veiksmažodis be -ed.",
+     "pattern": "I visited / I went · I didn't visit / I didn't go",
+     "examples": [
+      {
+       "text": "We travelled by train.",
+       "meaning": "Mes keliavome traukiniu."
+      },
+      {
+       "text": "They didn't go to the beach.",
+       "meaning": "Jie nevažiavo į paplūdimį."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "title": "5B · Mystery at the holiday club",
+   "title_learner": "Paslaptis atostogų klube",
+   "words": [
+    {
+     "text": "board game",
+     "meaning": "stalo žaidimas"
+    },
+    {
+     "text": "breakdance",
+     "meaning": "breiko šokis"
+    },
+    {
+     "text": "computer workshop",
+     "meaning": "kompiuterių užsiėmimas"
+    },
+    {
+     "text": "craft",
+     "meaning": "rankdarbiai"
+    },
+    {
+     "text": "drama",
+     "meaning": "vaidyba"
+    },
+    {
+     "text": "ecology workshop",
+     "meaning": "ekologijos užsiėmimas"
+    },
+    {
+     "text": "mountain biking",
+     "meaning": "kalnų dviračių sportas"
+    },
+    {
+     "text": "photography",
+     "meaning": "fotografija"
+    },
+    {
+     "text": "Science workshop",
+     "meaning": "gamtos mokslų užsiėmimas"
+    },
+    {
+     "text": "treasure hunt",
+     "meaning": "lobio paieška"
+    },
+    {
+     "text": "mystery",
+     "meaning": "paslaptis"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "past_wh",
+     "name": "Past simple: Wh- klausimai",
+     "explain": "Klausimas apie praeitį: klausiamasis žodis + did + veiksmažodis (be -ed).",
+     "pattern": "What / Where / When / Who … did you + veiksmažodis?",
+     "examples": [
+      {
+       "text": "Where did you go?",
+       "meaning": "Kur tu nuėjai (nuvažiavai)?"
+      },
+      {
+       "text": "What did they do at the club?",
+       "meaning": "Ką jie veikė klube?"
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "title": "5C · Packing for a school trip",
+   "title_learner": "Ruošiamės ekskursijai",
+   "words": [
+    {
+     "text": "T-shirt",
+     "meaning": "marškinėliai"
+    },
+    {
+     "text": "shirt",
+     "meaning": "marškiniai"
+    },
+    {
+     "text": "top",
+     "meaning": "palaidinukė"
+    },
+    {
+     "text": "jumper",
+     "meaning": "megztinis"
+    },
+    {
+     "text": "jacket",
+     "meaning": "striukė"
+    },
+    {
+     "text": "coat",
+     "meaning": "paltas"
+    },
+    {
+     "text": "dress",
+     "meaning": "suknelė"
+    },
+    {
+     "text": "skirt",
+     "meaning": "sijonas"
+    },
+    {
+     "text": "trousers",
+     "meaning": "kelnės"
+    },
+    {
+     "text": "jeans",
+     "meaning": "džinsai"
+    },
+    {
+     "text": "shorts",
+     "meaning": "šortai"
+    },
+    {
+     "text": "leggings",
+     "meaning": "tamprės"
+    },
+    {
+     "text": "tracksuit",
+     "meaning": "sportinis kostiumas"
+    },
+    {
+     "text": "swimsuit",
+     "meaning": "maudymosi kostiumėlis"
+    },
+    {
+     "text": "swimming trunks",
+     "meaning": "maudymosi glaudės"
+    },
+    {
+     "text": "shoes",
+     "meaning": "batai"
+    },
+    {
+     "text": "boots",
+     "meaning": "auliniai batai"
+    },
+    {
+     "text": "belt",
+     "meaning": "diržas"
+    },
+    {
+     "text": "hat",
+     "meaning": "skrybėlė, kepurė"
+    },
+    {
+     "text": "cap",
+     "meaning": "kepurė su snapeliu"
+    },
+    {
+     "text": "pack",
+     "meaning": "susidėti daiktus"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "past_yn",
+     "name": "Past simple: yes / no klausimai",
+     "explain": "Did + veiksmažodis be -ed? Atsakymas: Yes, I did. / No, I didn't.",
+     "pattern": "Did you + veiksmažodis …? – Yes, I did. / No, I didn't.",
+     "examples": [
+      {
+       "text": "Did you pack your jeans? – Yes, I did.",
+       "meaning": "Ar susidėjai džinsus? – Taip."
+      },
+      {
+       "text": "Did she take a coat? – No, she didn't.",
+       "meaning": "Ar ji pasiėmė paltą? – Ne."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "title": "5D · A strange holiday",
+   "title_learner": "Keistos atostogos",
+   "words": [
+    {
+     "text": "alien",
+     "meaning": "ateivis"
+    },
+    {
+     "text": "dragon",
+     "meaning": "drakonas"
+    },
+    {
+     "text": "ghost",
+     "meaning": "vaiduoklis"
+    },
+    {
+     "text": "mermaid",
+     "meaning": "undinė"
+    },
+    {
+     "text": "monster",
+     "meaning": "pabaisa"
+    },
+    {
+     "text": "troll",
+     "meaning": "trolis"
+    },
+    {
+     "text": "unicorn",
+     "meaning": "vienaragis"
+    },
+    {
+     "text": "werewolf",
+     "meaning": "vilkolakis"
+    },
+    {
+     "text": "spaceship",
+     "meaning": "erdvėlaivis"
+    },
+    {
+     "text": "strange",
+     "meaning": "keistas"
+    },
+    {
+     "text": "What happened next?",
+     "meaning": "Kas nutiko toliau?"
+    },
+    {
+     "text": "What happened then?",
+     "meaning": "Kas nutiko tada?"
+    },
+    {
+     "text": "What happened after that?",
+     "meaning": "Kas nutiko po to?"
+    },
+    {
+     "text": "What did they do then?",
+     "meaning": "Ką jie tada padarė?"
+    },
+    {
+     "text": "Why did they go there?",
+     "meaning": "Kodėl jie ten nuėjo?"
+    },
+    {
+     "text": "What did you say?",
+     "meaning": "Ką tu pasakei?"
+    }
+   ],
+   "grammar": []
+  },
+  {
+   "id": 24,
+   "title": "6A · A special meal",
+   "title_learner": "Ypatingi pietūs",
+   "words": [
+    {
+     "text": "soup",
+     "meaning": "sriuba"
+    },
+    {
+     "text": "omelette",
+     "meaning": "omletas"
+    },
+    {
+     "text": "pancake",
+     "meaning": "blynas"
+    },
+    {
+     "text": "meatballs",
+     "meaning": "mėsos kukuliai"
+    },
+    {
+     "text": "roast chicken",
+     "meaning": "kepta vištiena"
+    },
+    {
+     "text": "steak and chips",
+     "meaning": "kepsnys su bulvytėmis"
+    },
+    {
+     "text": "stew",
+     "meaning": "troškinys"
+    },
+    {
+     "text": "curry and rice",
+     "meaning": "karis su ryžiais"
+    },
+    {
+     "text": "kebab",
+     "meaning": "kebabas"
+    },
+    {
+     "text": "apple pie",
+     "meaning": "obuolių pyragas"
+    },
+    {
+     "text": "cheesecake",
+     "meaning": "sūrio pyragas"
+    },
+    {
+     "text": "chocolate mousse",
+     "meaning": "šokoladinis musas"
+    },
+    {
+     "text": "dessert",
+     "meaning": "desertas"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "pc_vs_ps",
+     "name": "Present continuous ar present simple?",
+     "explain": "Present simple – tai, ką darai paprastai, dažnai (every day, usually). Present continuous – tai, ką darai dabar (now, at the moment).",
+     "pattern": "I usually eat soup. · I'm eating pancakes now.",
+     "examples": [
+      {
+       "text": "I usually have cereal, but today I'm having pancakes.",
+       "meaning": "Paprastai valgau dribsnius, bet šiandien valgau blynus."
+      },
+      {
+       "text": "What are you cooking now?",
+       "meaning": "Ką tu dabar gamini?"
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "title": "6B · A visit to a food factory",
+   "title_learner": "Ekskursija į maisto fabriką",
+   "words": [
+    {
+     "text": "buy a souvenir",
+     "meaning": "nusipirkti suvenyrą"
+    },
+    {
+     "text": "drink hot chocolate",
+     "meaning": "gerti karštą šokoladą"
+    },
+    {
+     "text": "eat some cheese",
+     "meaning": "valgyti sūrio"
+    },
+    {
+     "text": "give my friend a chocolate bar",
+     "meaning": "duoti draugui šokolado batonėlį"
+    },
+    {
+     "text": "make a yoghurt",
+     "meaning": "pasigaminti jogurtą"
+    },
+    {
+     "text": "take a photo",
+     "meaning": "nusifotografuoti"
+    },
+    {
+     "text": "wear an overall",
+     "meaning": "vilkėti darbinį kombinezoną"
+    },
+    {
+     "text": "write a recipe",
+     "meaning": "užrašyti receptą"
+    },
+    {
+     "text": "taste",
+     "meaning": "ragauti"
+    },
+    {
+     "text": "tasty",
+     "meaning": "skanus"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "past_irregular",
+     "name": "Past simple: netaisyklingi veiksmažodžiai",
+     "explain": "Kai kurie veiksmažodžiai praeityje turi savo formą, ją reikia išmokti: buy → bought, eat → ate, drink → drank, give → gave, make → made, take → took, write → wrote, wear → wore.",
+     "pattern": "I bought · We ate · She made · Did you buy …? (klausime – be pakeitimo)",
+     "examples": [
+      {
+       "text": "We ate some cheese and took a photo.",
+       "meaning": "Mes suvalgėme sūrio ir nusifotografavome."
+      },
+      {
+       "text": "I bought a souvenir.",
+       "meaning": "Aš nusipirkau suvenyrą."
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "title": "6C · In the kitchen",
+   "title_learner": "Virtuvėje",
+   "words": [
+    {
+     "text": "add the salt",
+     "meaning": "įdėti druskos"
+    },
+    {
+     "text": "mix the eggs",
+     "meaning": "išmaišyti kiaušinius"
+    },
+    {
+     "text": "cut up the apple",
+     "meaning": "supjaustyti obuolį"
+    },
+    {
+     "text": "grate the cheese",
+     "meaning": "sutarkuoti sūrį"
+    },
+    {
+     "text": "weigh the sugar",
+     "meaning": "pasverti cukrų"
+    },
+    {
+     "text": "put the yoghurt in a bowl",
+     "meaning": "įdėti jogurtą į dubenį"
+    },
+    {
+     "text": "pour the mixture into a tin",
+     "meaning": "supilti masę į formą"
+    },
+    {
+     "text": "bake the muffins",
+     "meaning": "iškepti keksiukus"
+    },
+    {
+     "text": "take the biscuits out of the oven",
+     "meaning": "ištraukti sausainius iš orkaitės"
+    },
+    {
+     "text": "flour",
+     "meaning": "miltai"
+    },
+    {
+     "text": "fridge",
+     "meaning": "šaldytuvas"
+    },
+    {
+     "text": "ingredient",
+     "meaning": "ingredientas"
+    },
+    {
+     "text": "disgusting",
+     "meaning": "šlykštus"
+    }
+   ],
+   "grammar": [
+    {
+     "id": "imperatives",
+     "name": "Imperatives – liepiamieji sakiniai",
+     "explain": "Kai liepiame ar duodame nurodymą (pvz., recepte), sakome tik veiksmažodį be you. Neiginys: Don't + veiksmažodis.",
+     "pattern": "Mix the eggs. · Add the salt. · Don't open the oven.",
+     "examples": [
+      {
+       "text": "Cut up the apple.",
+       "meaning": "Supjaustyk obuolį."
+      },
+      {
+       "text": "Don't eat the mixture!",
+       "meaning": "Nevalgyk masės!"
+      }
+     ],
+     "requires": []
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "title": "6D · Trying something new",
+   "title_learner": "Ragaujame kažką naujo",
+   "words": [
+    {
+     "text": "sweet",
+     "meaning": "saldus"
+    },
+    {
+     "text": "salty",
+     "meaning": "sūrus"
+    },
+    {
+     "text": "sour",
+     "meaning": "rūgštus"
+    },
+    {
+     "text": "bitter",
+     "meaning": "kartus"
+    },
+    {
+     "text": "spicy",
+     "meaning": "aštrus"
+    },
+    {
+     "text": "hot",
+     "meaning": "aštrus, karštas"
+    },
+    {
+     "text": "juicy",
+     "meaning": "sultingas"
+    },
+    {
+     "text": "crunchy",
+     "meaning": "traškus"
+    },
+    {
+     "text": "creamy",
+     "meaning": "kreminis"
+    },
+    {
+     "text": "oily",
+     "meaning": "riebus"
+    },
+    {
+     "text": "strong",
+     "meaning": "stiprus (skonis)"
+    },
+    {
+     "text": "Could I have a snack, please?",
+     "meaning": "Ar galėčiau gauti užkandį?"
+    },
+    {
+     "text": "Could I try it, please?",
+     "meaning": "Ar galėčiau paragauti?"
+    },
+    {
+     "text": "Help yourself!",
+     "meaning": "Vaišinkis!"
+    },
+    {
+     "text": "Here you are.",
+     "meaning": "Prašom."
+    },
+    {
+     "text": "Of course!",
+     "meaning": "Žinoma!"
+    },
+    {
+     "text": "Good idea, they're delicious.",
+     "meaning": "Gera mintis, jie labai skanūs."
+    }
+   ],
+   "grammar": []
+  }
+ ]
+}

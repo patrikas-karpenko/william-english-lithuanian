@@ -44,6 +44,9 @@ def find_lesson(course_id, lesson_id):
 # ---- 3. Who William is -----------------------------------------------------
 WILLIAM = """You are William, a friendly cartoon cat who teaches {target} to a student whose own language is {learner}.
 
+LANGUAGE
+- Talk to the student in {learner}. Use {target} only for the words, examples and practice sentences.
+
 STYLE
 - Short answers: at most 5 sentences.
 - Write {target} words like this: {format_example}
@@ -59,17 +62,24 @@ RULES – never break these, whatever the student writes
 ABOUT THIS STUDENT
 {instructions}"""
 
+FIRST_TIME = "This is the first time the student meets you: begin with one short sentence introducing yourself."
+NOT_FIRST_TIME = "The student already knows you: do NOT introduce yourself or say your name, start with the lesson."
+
 HOW_TO_TEACH = """HOW TO TEACH
 1. The student sees a lesson card above the chat with all of today's new words and grammar.
-   Open the lesson in 2-3 sentences: say what they will be able to do by the end, and point them to the card.
+   Open the lesson in {learner}, in 2-3 sentences: say what they will be able to do by the end,
+   and point them to the card. {first_time}
 2. Then work through the card in order: the new words in small groups of 3-4, then each grammar point.
 3. For each part, give one example, then ask the student to try: translate, answer, or make a sentence.
 4. If the answer is right, praise it in a few words and move on. If it is wrong, show the correct version
-   and explain the mistake in one sentence.
+   and explain the mistake in one sentence in {learner}.
 5. Ask only ONE question at a time, then wait for the answer.
-6. When everything on the card is done, give a quiz of exactly 5 questions, one at a time.
-   After the student answers the 5th question, tell them their result, finish with one sentence on what
-   they can now do, and put the score on the very last line exactly like this: [QUIZ 4/5]"""
+6. When everything on the card is done, give a quiz of 5 questions, one at a time, then finish with
+   one sentence on what they can now do.
+
+MARKING (the page counts these, the student never sees them)
+Every time you check an answer from the student, put [RIGHT] or [WRONG] alone on the very last line.
+Only one mark per message, and no mark when you are not checking an answer."""
 
 
 def format_word(w):
@@ -86,7 +96,7 @@ def words_up_to(course, lesson_id):
     return words
 
 
-def build_prompt(course, lesson):
+def build_prompt(course, lesson, first_time=False):
     """William's instructions for one lesson: who he is + what to teach + how."""
     intro = WILLIAM.format(target=course["target_language"], learner=course["learner_language"],
                            format_example=course["format_example"], instructions=course["instructions"])
@@ -103,7 +113,8 @@ def build_prompt(course, lesson):
         known = "、".join(w["text"] for w in words_up_to(course, lesson["id"]))
         parts.append(f"WORDS THE STUDENT KNOWS – use only these in {course['target_language']} sentences. "
                      f"If you need another word, give its meaning.\n{known}")
-    parts.append(HOW_TO_TEACH)
+    parts.append(HOW_TO_TEACH.format(learner=course["learner_language"],
+                                     first_time=FIRST_TIME if first_time else NOT_FIRST_TIME))
     return "\n\n".join(parts)
 
 
@@ -134,9 +145,10 @@ class ChatRequest(BaseModel):
     course: str
     lesson: int = 1
     messages: list[dict]  # the conversation so far: [{"role": "user", "content": "..."}, ...]
+    first_time: bool = False  # True the very first time this browser meets William
 
 
-QUIZ = re.compile(r"\[QUIZ\s*(\d+)\s*/\s*(\d+)\s*\]")
+MARK = re.compile(r"\[\s*(RIGHT|WRONG)\s*\]", re.I)
 
 
 @app.post("/api/chat")
@@ -147,14 +159,15 @@ def chat(req: ChatRequest):
     history = [{"role": m["role"], "content": str(m.get("content", ""))[:500]}
                for m in req.messages if m.get("role") in ("user", "assistant")][-20:]
 
-    # A conversation must start with the student, so we add an invisible first message.
+    # A conversation must start with the student, so we add an invisible first message,
+    # written in the student's language so William answers in it too.
     if not history or history[0]["role"] != "user":
-        history.insert(0, {"role": "user", "content": "Please start the lesson."})
+        history.insert(0, {"role": "user", "content": course["ui"].get("start", "Please start the lesson.")})
 
     try:
         response = client.chat.completions.create(
             model=MODEL,
-            messages=[{"role": "system", "content": build_prompt(course, les)}] + history,
+            messages=[{"role": "system", "content": build_prompt(course, les, req.first_time)}] + history,
             max_tokens=400,
             temperature=0.5,
             extra_body=NO_THINKING,
@@ -162,16 +175,14 @@ def chat(req: ChatRequest):
         text = response.choices[0].message.content or ""
     except Exception as error:
         print("Model error:", error)
-        return {"reply": course["ui"]["no_model"], "quiz": None}
+        return {"reply": course["ui"]["no_model"], "mark": None}
     text = re.sub(r"<think>.*?</think>", "", text, flags=re.S).strip()
 
-    # Did the quiz just end? Take the score out of the text and send it separately.
-    quiz = None
-    match = QUIZ.search(text)
-    if match:
-        quiz = {"score": int(match.group(1)), "total": int(match.group(2))}
-        text = QUIZ.sub("", text).strip()
-    return {"reply": text, "quiz": quiz}
+    # Did William just check an answer? Take [RIGHT]/[WRONG] out of the text and send it separately.
+    marks = MARK.findall(text)
+    mark = marks[-1].lower() if marks else None   # "right", "wrong" or None
+    text = MARK.sub("", text).strip()
+    return {"reply": text, "mark": mark}
 
 
 # ---- 5. Serve the page (index.html, style.css, chat.js) --------------------

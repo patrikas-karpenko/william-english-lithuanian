@@ -71,6 +71,28 @@ body {
   .bubble { transform: translate(40px, 0); max-width: 150px; font-size: 14px; }
 }
 
+/* The score next to William: 0/5 ... 5/5 = flip */
+.score {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  margin: 0;
+  transform: translate(-200px, 0);
+  padding: 6px 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--accent);
+}
+.score.bump { animation: bump .4s; }
+@keyframes bump { 50% { transform: translate(-200px, 0) scale(1.35); } }
+@media (max-width: 500px) {
+  .score { transform: translate(-150px, 0); font-size: 15px; }
+  @keyframes bump { 50% { transform: translate(-150px, 0) scale(1.35); } }
+}
+
 .menus { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 10px; }
 .menus select[hidden] { display: none; }
 
@@ -106,7 +128,6 @@ body {
 }
 .msg.william { align-self: flex-start; background: var(--card); border: 1px solid var(--line); }
 .msg.me { align-self: flex-end; background: var(--accent); color: white; }
-.msg.result { align-self: center; font-weight: 600; background: #fef3c7; border: 1px solid #fde68a; }
 
 /* The lesson card */
 .card {
